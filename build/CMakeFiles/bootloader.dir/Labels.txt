@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/ahsanul/esp/waifos/build/CMakeFiles/bootloader
+/home/ahsanul/esp/waifos/build/CMakeFiles/bootloader.rule
+/home/ahsanul/esp/waifos/build/CMakeFiles/bootloader-complete.rule
+/home/ahsanul/esp/waifos/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/ahsanul/esp/waifos/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/ahsanul/esp/waifos/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/ahsanul/esp/waifos/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/ahsanul/esp/waifos/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/ahsanul/esp/waifos/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/ahsanul/esp/waifos/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

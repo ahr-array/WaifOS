@@ -1,0 +1,2 @@
+source /home/ahsanul/esp/waifos/build/bootloader/gdbinit/symbols
+source /home/ahsanul/esp/waifos/build/bootloader/gdbinit/connect
