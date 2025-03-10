@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "bootloader",
-    "project_version":    "1",
+    "project_version":    "79b9e3c-dirty",
     "project_path":       "/home/ahsanul/esp/waifos/components/bootloader/subproject",
     "idf_path":           "/home/ahsanul/esp/esp-idf",
     "build_dir":          "/home/ahsanul/esp/waifos/build/bootloader",

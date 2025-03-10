@@ -1,7 +1,22 @@
 #include <stdio.h>
-#include "esp_system.h"
-#include "esp_log.h"
+#include "kernel.h"
+#include "task.h"
 
-void app_main() {
-    ESP_LOGI("WaifOS", "Main application started.");
+void task1(void) {
+    while (1) {
+        printf("Task 1 running...\n");
+    }
+}
+
+void task2(void) {
+    while (1) {
+        printf("Task 2 running...\n");
+    }
+}
+
+void app_main(void) {
+    kernel_init();
+    create_task(task1);
+    create_task(task2);
+    kernel_start();
 }

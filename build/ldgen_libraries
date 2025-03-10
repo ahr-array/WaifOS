@@ -78,3 +78,4 @@
 /home/ahsanul/esp/waifos/build/esp-idf/spiffs/libspiffs.a
 /home/ahsanul/esp/waifos/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
 /home/ahsanul/esp/waifos/build/esp-idf/main/libmain.a
+/home/ahsanul/esp/waifos/build/esp-idf/kernel/libkernel.a
