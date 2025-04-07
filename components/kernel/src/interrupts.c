@@ -1,15 +1,26 @@
 #include "interrupts.h"
-#include <stdio.h>
+#include "scheduler.h"
+#include <esp_timer.h>
+#include "esp_attr.h"
 
-void interrupt_init(void) {
-    printf("[INTERRUPT] Setting up interrupts...\n");
+#define TIMER_INTERVAL_MS 100
+
+void IRAM_ATTR timer_callback(void* arg) {
+    yield();
 }
 
-void enable_interrupts(void) {
-    printf("[INTERRUPT] Enabling interrupts...\n");
+void init_timer() {
+    const esp_timer_create_args_t timer_args = {
+        .callback = &timer_callback,
+        .name = "waifos_timer"
+    };
+
+    esp_timer_handle_t timer;
+    esp_timer_create(&timer_args, &timer);
+    esp_timer_start_periodic(timer, TIMER_INTERVAL_MS * 1000);
 }
 
-void disable_interrupts(void) {
-    printf("[INTERRUPT] Disabling interrupts...\n");
+// This is called inside the timer ISR
+void yield() {
+    schedule_next();
 }
-

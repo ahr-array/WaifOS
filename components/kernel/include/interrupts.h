@@ -1,9 +1,7 @@
 #ifndef INTERRUPTS_H
 #define INTERRUPTS_H
 
-void interrupt_init(void);
-void enable_interrupts(void);
-void disable_interrupts(void);
+void init_timer();
+void yield(); // Called from the timer interrupt
 
-#endif // INTERRUPTS_H
-
+#endif
